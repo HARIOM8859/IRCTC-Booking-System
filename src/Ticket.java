@@ -3,9 +3,9 @@ public class Ticket {
     private int ticketid;
     private User user;
     private Train train;
-    private String SeatBooked;
+    private int SeatBooked;
 
-    public Ticket(User user, Train train, String seatBooked) {
+    public Ticket(User user, Train train, int seatBooked) {
         this.ticketid = counter++;
         this.user = user;
         this.train = train;
@@ -44,11 +44,11 @@ public class Ticket {
         this.train = train;
     }
 
-    public String getSeatBooked() {
+    public int getSeatBooked() {
         return SeatBooked;
     }
 
-    public void setSeatBooked(String seatBooked) {
+    public void setSeatBooked(int seatBooked) {
         SeatBooked = seatBooked;
     }
 
