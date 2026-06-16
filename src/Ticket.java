@@ -55,6 +55,6 @@ public class Ticket {
     @Override
     public String toString() {
         return "TicketId: "+ticketid+ " | Train: "+ train.getTrainName() + " | Passenger Name: "+ user.getFullName()
-                + " | Status: "+getSeatBooked() + " | From "+ train.getSource() + " | To "+ train.getDest();
+                + " | Seats Booked: "+getSeatBooked() + " | From "+ train.getSource() + " | To "+ train.getDest();
     }
 }

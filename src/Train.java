@@ -60,7 +60,9 @@ public class Train {
     }
 
     public void setAvailableSeats(int availableSeats) {
-        AvailableSeats = availableSeats;
+        if(availableSeats>=0) {
+            AvailableSeats = availableSeats;
+        }
     }
     public boolean BookSeats(int Count){
         if(Count <= AvailableSeats){

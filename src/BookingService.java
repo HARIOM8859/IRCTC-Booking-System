@@ -53,6 +53,7 @@ public class BookingService {
         return res;
     }
 
+    //.........................Unable to understand the iterators........................(Work On it)
     public boolean cancelticket(int ticketid, User user) {
         Iterator<Ticket> iterator = ticketList.listIterator();
         while (iterator.hasNext()) {

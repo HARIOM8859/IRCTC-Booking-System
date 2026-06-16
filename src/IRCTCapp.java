@@ -41,8 +41,8 @@ public class IRCTCapp {
         String fullName = scanner.nextLine();
         System.out.print("Enter Contact: ");
         String contact = scanner.next();
-
         userServices.registerUser(username,password,fullName,contact);
+        userServices.LoginUser(username,password);
     }
     public void login(){
         System.out.print("Enter username: ");
